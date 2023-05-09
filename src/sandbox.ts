@@ -21,3 +21,15 @@ calc = (numOne: number, numTwo: number, action: string) => {
 let result = calc(20,10,'add');
 console.log(result)
 
+let student: (name:string,secondName:string) => void;
+
+student = (firstName: string, lastName: string) => {
+    console.log(`${firstName} ${lastName}`);
+}
+student('Zachary', 'Moseti');
+
+let details = (county: string,role:string, age?:number) => {
+    console.log(`${county}, ${role}, ${age}`)
+}
+
+details('Kisii','dev')
