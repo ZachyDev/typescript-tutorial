@@ -1,10 +1,19 @@
 "use strict";
+// example 1
 let greet;
-greet = () => {
-    console.log('Hello user');
+greet = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
 };
-const add = (a, b, c = 10) => {
-    console.log(a + b);
-    console.log(c);
+greet('Zachy', 'Hello');
+// example 2
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
 };
-add(5, 10, 25);
+let result = calc(20, 10, 'add');
+console.log(result);

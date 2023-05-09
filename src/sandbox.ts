@@ -1,22 +1,23 @@
-type StringOrNum = string | number;
+// example 1
+let greet:(x:string,y:string) => void;
 
-let greet: Function;
-
-greet = () => {
-    console.log('Hello user');
+greet = (name: string, greeting: string) => {
+    console.log(`${name} says ${greeting}`);
 }
 
+greet('Zachy', 'Hello');
 
-const add = (a:number,b:number,c:StringOrNum= 10) => {
-    console.log(a+b)
-    console.log(c)
+// example 2
+let calc: (a:number, b:number, c:string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+    if(action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
 }
+let result = calc(20,10,'add');
+console.log(result)
 
-add(5,10,25);
-
-let minus: Function;
-
-minus = (b:number,c:number): number => {
-    return b + c;
-}
-let result = minus(20,9);
