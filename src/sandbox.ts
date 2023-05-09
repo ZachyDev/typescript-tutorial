@@ -1,3 +1,5 @@
+type StringOrNum = string | number;
+
 let greet: Function;
 
 greet = () => {
@@ -5,7 +7,7 @@ greet = () => {
 }
 
 
-const add = (a:number,b:number,c:number|string = 10) => {
+const add = (a:number,b:number,c:StringOrNum= 10) => {
     console.log(a+b)
     console.log(c)
 }
