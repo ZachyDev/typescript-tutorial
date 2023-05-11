@@ -1,17 +1,4 @@
-"use strict";
-// classes
-class Invoice {
-    // constructor
-    constructor(client, details, amount) {
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
-    }
-    // method
-    output() {
-        console.log(`${this.client} owes Ksh. ${this.amount} on ${this.details}`);
-    }
-}
+import { Invoice } from './classes/invoice.js';
 // instances of te object
 let invOne = new Invoice('Moseti', 'payment for electronics', 100000);
 let invTwo = new Invoice('Zachary', 'payment for furniture', 50000);
