@@ -1,8 +1,10 @@
-const anchor = document.querySelector('a')!;
-
-// if(anchor) {
-//     console.log(anchor.href)
-// }
+// classes
+class Invoice {
+    client: string;
+    details: string;
+    amount: number;
+    
+}
 
 let form = document.querySelector('.new-item-form') as HTMLFormElement;
 

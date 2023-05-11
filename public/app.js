@@ -1,8 +1,7 @@
 "use strict";
-const anchor = document.querySelector('a');
-// if(anchor) {
-//     console.log(anchor.href)
-// }
+// classes
+class Invoice {
+}
 let form = document.querySelector('.new-item-form');
 // inputs 
 const type = document.querySelector('#type');
