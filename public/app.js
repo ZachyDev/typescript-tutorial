@@ -2,14 +2,14 @@
 // classes
 class Invoice {
     // constructor
-    constructor(c, d, a) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
+    constructor(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
     }
     // method
     output() {
-        console.log(`Client: ${this.client} \n Details: ${this.details} \n Amount: ${this.amount}`);
+        console.log(`${this.client} owes Ksh. ${this.amount} on ${this.details}`);
     }
 }
 // instances of te object
@@ -18,7 +18,10 @@ let invTwo = new Invoice('Zachary', 'payment for furniture', 50000);
 let invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
-console.log(invoices);
+// loop through the invoices
+invoices.forEach(inv => {
+    console.log(inv.client, inv.amount, inv.output());
+});
 let form = document.querySelector('.new-item-form');
 // inputs 
 const type = document.querySelector('#type');
