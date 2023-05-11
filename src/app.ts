@@ -18,10 +18,12 @@ class Invoice {
     // instances of te object
     let invOne =  new Invoice('Moseti', 'payment for electronics', 100000);
     let invTwo =  new Invoice('Zachary', 'payment for furniture', 50000);
-    
-    console.log(invOne);
-    console.log(invTwo);
 
+    let invoices: Invoice[] = [];
+    invoices.push(invOne);
+    invoices.push(invTwo);
+
+    console.log(invoices);
 
 let form = document.querySelector('.new-item-form') as HTMLFormElement;
 
@@ -41,5 +43,3 @@ form.addEventListener('submit', (e:Event) => {
         amount.valueAsNumber
     );
 })
-
-
