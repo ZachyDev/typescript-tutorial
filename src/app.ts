@@ -4,13 +4,26 @@ class Invoice {
     details: string;
     amount: number;
 
+    // constructor
     constructor(c:string,d:string,a:number) {
         this.client = c;
         this.details = d;
         this.amount = a;
     }
-    
+    // method
+    output() {
+        console.log(`Client: ${this.client} \n Details: ${this.details} \n Amount: ${this.amount}`);
+    }
 }
+    // instances of te object
+    let invOne =  new Invoice('Moseti', 'payment for electronics', 100000);
+    let invTwo =  new Invoice('Zachary', 'payment for furniture', 50000);
+
+    let invoices: Invoice[] = [];
+    invoices.push(invOne);
+    invoices.push(invTwo);
+
+    console.log(invoices);
 
 let form = document.querySelector('.new-item-form') as HTMLFormElement;
 
