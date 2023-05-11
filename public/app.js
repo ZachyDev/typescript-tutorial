@@ -1,6 +1,11 @@
 "use strict";
 // classes
 class Invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
 }
 let form = document.querySelector('.new-item-form');
 // inputs 
