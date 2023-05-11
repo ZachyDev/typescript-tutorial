@@ -1,18 +1,15 @@
 // classes
 class Invoice {
-    client: string;
-    details: string;
-    amount: number;
 
     // constructor
-    constructor(c:string,d:string,a:number) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
-    }
+    constructor(
+        readonly client: string,
+        private details: string,
+        public amount: number
+    ){}
     // method
     output() {
-        console.log(`Client: ${this.client} \n Details: ${this.details} \n Amount: ${this.amount}`);
+        console.log(`${this.client} owes Ksh. ${this.amount} on ${this.details}`);
     }
 }
     // instances of te object
@@ -23,7 +20,11 @@ class Invoice {
     invoices.push(invOne);
     invoices.push(invTwo);
 
-    console.log(invoices);
+    // loop through the invoices
+    invoices.forEach(inv => {
+        console.log(inv.client, inv.amount, inv.output());
+    })
+
 
 let form = document.querySelector('.new-item-form') as HTMLFormElement;
 
