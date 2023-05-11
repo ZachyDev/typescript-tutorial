@@ -1,12 +1,22 @@
 "use strict";
 // classes
 class Invoice {
+    // constructor
     constructor(c, d, a) {
         this.client = c;
         this.details = d;
         this.amount = a;
     }
+    // method
+    output() {
+        console.log(`Client: ${this.client} \n Details: ${this.details} \n Amount: ${this.amount}`);
+    }
 }
+// instances of te object
+let invOne = new Invoice('Moseti', 'payment for electronics', 100000);
+let invTwo = new Invoice('Zachary', 'payment for furniture', 50000);
+console.log(invOne);
+console.log(invTwo);
 let form = document.querySelector('.new-item-form');
 // inputs 
 const type = document.querySelector('#type');
