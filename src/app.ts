@@ -1,3 +1,5 @@
+// interfaces
+
 import { Invoice } from './classes/invoice.js';
 
 // instances of te object
