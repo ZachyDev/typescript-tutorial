@@ -1,10 +1,10 @@
 // classes
 export class Invoice {
     // constructor
-    constructor(client, details, amount) {
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
+    constructor(c, d, a) {
+        this.client = c;
+        this.amount = a;
+        this.details = d;
     }
     // method
     output() {

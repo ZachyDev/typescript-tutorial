@@ -1,3 +1,4 @@
+// interfaces
 import { Invoice } from './classes/invoice.js';
 // instances of te object
 let invOne = new Invoice('Moseti', 'payment for electronics', 100000);
