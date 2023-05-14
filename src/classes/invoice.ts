@@ -16,8 +16,3 @@ export class Invoice {
     }
 }
 
-let greet: (name:string,county?:string) => void;
-greet = (a:string,b?:string) => {
-    console.log(`Hello ${a}, ${b}`);
-}
-greet('moseti');

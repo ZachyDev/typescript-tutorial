@@ -1,4 +1,24 @@
 // interfaces
+interface isPerson {
+    name: string;
+    amount: number;
+    speak(a:string): void;
+    spend(b:number): number;
+}
+
+const personOne: isPerson = {
+    name: "John",
+    amount: 1000,
+    speak(msg: string){
+        console.log(msg);
+    },
+    spend(b: number){
+        console.log(b);
+        return b;
+    }
+        
+}
+console.log(personOne)
 
 import { Invoice } from './classes/invoice.js';
 
