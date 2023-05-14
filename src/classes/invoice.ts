@@ -15,3 +15,9 @@ export class Invoice {
         console.log(`${this.client} owes Ksh. ${this.amount} on ${this.details}`);
     }
 }
+
+let greet: (name:string,county?:string) => void;
+greet = (a:string,b?:string) => {
+    console.log(`Hello ${a}, ${b}`);
+}
+greet('moseti');
