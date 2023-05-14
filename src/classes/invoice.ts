@@ -15,3 +15,4 @@ export class Invoice {
         console.log(`${this.client} owes Ksh. ${this.amount} on ${this.details}`);
     }
 }
+

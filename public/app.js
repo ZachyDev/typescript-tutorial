@@ -1,4 +1,15 @@
-// interfaces
+const personOne = {
+    name: "John",
+    amount: 1000,
+    speak(msg) {
+        console.log(msg);
+    },
+    spend(b) {
+        console.log(b);
+        return b;
+    }
+};
+console.log(personOne);
 import { Invoice } from './classes/invoice.js';
 // instances of te object
 let invOne = new Invoice('Moseti', 'payment for electronics', 100000);
